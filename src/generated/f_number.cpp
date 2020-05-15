@@ -1,0 +1,87 @@
+// generate by pypp
+// original source code: ricoh_camera_sdk/f_number.hpp
+
+#include <pybind11/pybind11.h>
+#include <pybind11/stl.h>
+
+#include "ricoh_camera_sdk/f_number.hpp"
+
+
+
+
+
+void init_ricoh_camera_sdk_f_number_hpp(pybind11::module scope) {
+    pybind11::class_<Ricoh::CameraController::FNumber, Ricoh::CameraController::CaptureSetting, std::shared_ptr<Ricoh::CameraController::FNumber>>(scope, "FNumber")
+        .def(pybind11::init<>())
+        .def_readonly_static("Null", &Ricoh::CameraController::FNumber::Null)
+        .def_readonly_static("F0_5", &Ricoh::CameraController::FNumber::F0_5)
+        .def_readonly_static("F0_7", &Ricoh::CameraController::FNumber::F0_7)
+        .def_readonly_static("F0_8", &Ricoh::CameraController::FNumber::F0_8)
+        .def_readonly_static("F0_9", &Ricoh::CameraController::FNumber::F0_9)
+        .def_readonly_static("F1_0", &Ricoh::CameraController::FNumber::F1_0)
+        .def_readonly_static("F1_1", &Ricoh::CameraController::FNumber::F1_1)
+        .def_readonly_static("F1_2", &Ricoh::CameraController::FNumber::F1_2)
+        .def_readonly_static("F1_3", &Ricoh::CameraController::FNumber::F1_3)
+        .def_readonly_static("F1_4", &Ricoh::CameraController::FNumber::F1_4)
+        .def_readonly_static("F1_6", &Ricoh::CameraController::FNumber::F1_6)
+        .def_readonly_static("F1_7", &Ricoh::CameraController::FNumber::F1_7)
+        .def_readonly_static("F1_8", &Ricoh::CameraController::FNumber::F1_8)
+        .def_readonly_static("F1_9", &Ricoh::CameraController::FNumber::F1_9)
+        .def_readonly_static("F2_0", &Ricoh::CameraController::FNumber::F2_0)
+        .def_readonly_static("F2_2", &Ricoh::CameraController::FNumber::F2_2)
+        .def_readonly_static("F2_4", &Ricoh::CameraController::FNumber::F2_4)
+        .def_readonly_static("F2_5", &Ricoh::CameraController::FNumber::F2_5)
+        .def_readonly_static("F2_8", &Ricoh::CameraController::FNumber::F2_8)
+        .def_readonly_static("F3_2", &Ricoh::CameraController::FNumber::F3_2)
+        .def_readonly_static("F3_3", &Ricoh::CameraController::FNumber::F3_3)
+        .def_readonly_static("F3_5", &Ricoh::CameraController::FNumber::F3_5)
+        .def_readonly_static("F4_0", &Ricoh::CameraController::FNumber::F4_0)
+        .def_readonly_static("F4_5", &Ricoh::CameraController::FNumber::F4_5)
+        .def_readonly_static("F4_8", &Ricoh::CameraController::FNumber::F4_8)
+        .def_readonly_static("F5_0", &Ricoh::CameraController::FNumber::F5_0)
+        .def_readonly_static("F5_6", &Ricoh::CameraController::FNumber::F5_6)
+        .def_readonly_static("F5_8", &Ricoh::CameraController::FNumber::F5_8)
+        .def_readonly_static("F6_3", &Ricoh::CameraController::FNumber::F6_3)
+        .def_readonly_static("F6_7", &Ricoh::CameraController::FNumber::F6_7)
+        .def_readonly_static("F7_1", &Ricoh::CameraController::FNumber::F7_1)
+        .def_readonly_static("F8_0", &Ricoh::CameraController::FNumber::F8_0)
+        .def_readonly_static("F9_0", &Ricoh::CameraController::FNumber::F9_0)
+        .def_readonly_static("F9_5", &Ricoh::CameraController::FNumber::F9_5)
+        .def_readonly_static("F10", &Ricoh::CameraController::FNumber::F10)
+        .def_readonly_static("F11", &Ricoh::CameraController::FNumber::F11)
+        .def_readonly_static("F13", &Ricoh::CameraController::FNumber::F13)
+        .def_readonly_static("F14", &Ricoh::CameraController::FNumber::F14)
+        .def_readonly_static("F16", &Ricoh::CameraController::FNumber::F16)
+        .def_readonly_static("F18", &Ricoh::CameraController::FNumber::F18)
+        .def_readonly_static("F19", &Ricoh::CameraController::FNumber::F19)
+        .def_readonly_static("F20", &Ricoh::CameraController::FNumber::F20)
+        .def_readonly_static("F22", &Ricoh::CameraController::FNumber::F22)
+        .def_readonly_static("F25", &Ricoh::CameraController::FNumber::F25)
+        .def_readonly_static("F27", &Ricoh::CameraController::FNumber::F27)
+        .def_readonly_static("F29", &Ricoh::CameraController::FNumber::F29)
+        .def_readonly_static("F32", &Ricoh::CameraController::FNumber::F32)
+        .def_readonly_static("F36", &Ricoh::CameraController::FNumber::F36)
+        .def_readonly_static("F38", &Ricoh::CameraController::FNumber::F38)
+        .def_readonly_static("F40", &Ricoh::CameraController::FNumber::F40)
+        .def_readonly_static("F45", &Ricoh::CameraController::FNumber::F45)
+        .def_readonly_static("F51", &Ricoh::CameraController::FNumber::F51)
+        .def_readonly_static("F54", &Ricoh::CameraController::FNumber::F54)
+        .def_readonly_static("F57", &Ricoh::CameraController::FNumber::F57)
+        .def_readonly_static("F64", &Ricoh::CameraController::FNumber::F64)
+        .def_readonly_static("F72", &Ricoh::CameraController::FNumber::F72)
+        .def_readonly_static("F76", &Ricoh::CameraController::FNumber::F76)
+        .def_readonly_static("F80", &Ricoh::CameraController::FNumber::F80)
+        .def_readonly_static("F81", &Ricoh::CameraController::FNumber::F81)
+        .def_readonly_static("F90", &Ricoh::CameraController::FNumber::F90)
+        .def_readonly_static("F107", &Ricoh::CameraController::FNumber::F107)
+        .def_readonly_static("F128", &Ricoh::CameraController::FNumber::F128)
+        .def_readonly_static("F180", &Ricoh::CameraController::FNumber::F180)
+        .def_readonly_static("F256", &Ricoh::CameraController::FNumber::F256)
+        ;
+    pybind11::class_<Ricoh::CameraController::FNumberValue, Ricoh::CameraController::CaptureSettingValue, std::shared_ptr<Ricoh::CameraController::FNumberValue>>(scope, "FNumberValue")
+        .def(pybind11::init<const std::string &>())
+        .def("__eq__", &Ricoh::CameraController::FNumberValue::operator==)
+        .def("__ne__", &Ricoh::CameraController::FNumberValue::operator!=)
+        .def("toString", &Ricoh::CameraController::FNumberValue::toString)
+        ;
+}
